@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ImageProcessing</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <description>テンプレートマッチを行うサーブレット</description>
+    <display-name>TemplateMatch</display-name>
+    <servlet-name>TemplateMatch</servlet-name>
+    <servlet-class>jp.qst.demo.TemplateMatch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TemplateMatch</servlet-name>
+    <url-pattern>/TemplateMatch</url-pattern>
+  </servlet-mapping>
+</web-app>
